@@ -24,7 +24,7 @@ configurations.all {
 plugins {
     java
     application
-    id("com.github.johnrengelman.shadow") version "4.0.4"
+    id("com.github.johnrengelman.shadow") version "6.1.0"
     id("com.github.salomonbrys.gradle.sass") version "1.2.0"
 }
 
