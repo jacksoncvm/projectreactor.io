@@ -53,8 +53,10 @@ repositories {
 }
 
 dependencies {
-    compile("io.projectreactor.netty:reactor-netty:0.8.9.RELEASE")
-    compile("io.projectreactor:reactor-core:3.2.10.RELEASE")
+    implementation(platform("io.projectreactor:reactor-bom:2020.0.5"))
+    implementation("io.projectreactor.netty:reactor-netty")
+    implementation("io.projectreactor:reactor-core")
+
     compile("org.thymeleaf:thymeleaf:3.0.9.RELEASE")
     compile("org.yaml:snakeyaml:1.17")
     compile("com.fasterxml.jackson.core:jackson-databind:2.10.1")
